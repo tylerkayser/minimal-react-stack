@@ -16,5 +16,5 @@ Start the dev server
 Navigate to `http://localhost:3000`, which is configurable.
 
 
-# Hot Module Reload
+## Hot Module Reload
 HMR is manually configured to update React components, actions, epics, and reducers all in place.
