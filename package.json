@@ -1,7 +1,7 @@
 {
   "name": "minimal-react-stack",
-  "version": "0.1.0",
-  "description": "Minimal React Stack with Redux, HMR, RxJS, and Webpack",
+  "version": "0.1.1",
+  "description": "Minimal React Stack with Redux, Redux-Observable, HMR, Babel, and Webpack",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.config.js --progress --profile --colors && cp src/web/index.html dist/web/index.html",
