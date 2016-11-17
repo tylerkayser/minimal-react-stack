@@ -1,12 +1,13 @@
 import React, { PropTypes } from 'react'
 
-const Button = ({ onClick }) => (
+const Button = ({ label, onClick }) => (
   <button onClick={() => onClick()}>
-    Click me
+    {label || 'Click me'}
   </button>
 )
 
 Button.propTypes = {
+  label: PropTypes.string,
   onClick: PropTypes.func.isRequired
 }
 

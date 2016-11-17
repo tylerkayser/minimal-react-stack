@@ -1,10 +1,7 @@
-export const PING = 'PING'
-export const PONG = 'PONG'
+import home from './home/home-actions'
 
-export function ping() {
-  return {type: PING}
+const actions = {
+  home
 }
 
-export function pong() {
-  return {type: PONG}
-}
+export default actions

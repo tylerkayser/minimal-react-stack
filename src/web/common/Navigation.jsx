@@ -1,0 +1,13 @@
+import Link from 'react-router/Link'
+import React from 'react'
+import './Navigation.scss'
+
+const Navigation = () => (
+  <nav>
+    <Link to="/">Home</Link>
+    <Link to="/about">About</Link>
+    <Link to="/contact">Contact</Link>
+  </nav>
+)
+
+export default Navigation

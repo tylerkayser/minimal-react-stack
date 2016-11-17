@@ -22,6 +22,11 @@ module.exports = {
         test: /\.jsx?$/,
         include: config.paths.src,
         loaders: ['babel?cacheDirectory']
+      },
+      {
+        test: /\.scss$/,
+        include: config.paths.src,
+        loaders: ['style', 'css', 'sass']
       }
     ]
   },
@@ -35,5 +40,8 @@ module.exports = {
   ],
   resolve: {
     extensions: ['', '.js', '.jsx']
+  },
+  sassLoader: {
+    data: '$env: \'' + process.env.NODE_ENV + '\';'
   }
 };

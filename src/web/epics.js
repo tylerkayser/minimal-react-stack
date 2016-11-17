@@ -1,18 +1,8 @@
-import { PING, pong } from './actions'
+import home from './home/home-epics'
 import { combineEpics } from 'redux-observable'
 
-import 'rxjs/add/operator/delay'
-import 'rxjs/add/operator/filter'
-import 'rxjs/add/operator/mapTo'
-
-const pingEpic = action$ =>
-  action$
-    .filter(action => action.type === PING)
-    .delay(1000)
-    .mapTo(pong())
-
-const appEpics = combineEpics(
-  pingEpic
+const epics = combineEpics(
+  home
 )
 
-export default appEpics
+export default epics

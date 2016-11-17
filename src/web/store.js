@@ -1,9 +1,9 @@
 import epics from './epics'
 import reducers from './reducers'
+import { applyMiddleware, combineReducers, createStore } from 'redux'
 import { createEpicMiddleware } from 'redux-observable'
-import { applyMiddleware, createStore } from 'redux'
 
-export default function configureStore(initialState) {
+function configureStore(initialState) {
   const epicMiddleware = createEpicMiddleware(epics)
 
   const store = createStore(
@@ -23,3 +23,5 @@ export default function configureStore(initialState) {
 
   return store
 }
+
+export default configureStore

@@ -1,8 +1,10 @@
+import common from './common/common-reducers'
+import home from './home/home-reducers'
 import { combineReducers } from 'redux'
 
-function AppReducers(state, action) {
-  console.log(action)
-  return state
-}
+const reducers = combineReducers({
+  common,
+  home
+})
 
-export default AppReducers
+export default reducers
