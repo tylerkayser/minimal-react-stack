@@ -1,3 +1,4 @@
+import DevTools from './common/dev-tools';
 import epics from './epics'
 import reducers from './reducers'
 import { applyMiddleware, combineReducers, createStore } from 'redux'
@@ -8,6 +9,7 @@ function configureStore(initialState) {
 
   const store = createStore(
     reducers,
+    DevTools.instrument(),
     applyMiddleware(epicMiddleware)
   )
 

@@ -1,3 +1,4 @@
+import DevTools from './dev-tools'
 import Navigation from './navigation'
 import React from 'react'
 import Router from 'react-router/BrowserRouter'
@@ -14,6 +15,7 @@ const Root = ({ store }) => (
       <div>
         <Navigation/>
         <Routes/>
+        <DevTools/>
       </div>
     </Router>
   </Provider>
