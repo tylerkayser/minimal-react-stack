@@ -1,9 +1,9 @@
-import Button from '../common/Button'
+import Button from '../common/button'
 import React, { PropTypes } from 'react'
 import { connect } from 'react-redux'
-import { ping } from './home-actions'
+import { ping } from './home.actions'
 
-const HomeButtonContainer = connect(
+const HomeButton = connect(
   state => ({
     label: state.home.pingPong
   }),
@@ -12,4 +12,4 @@ const HomeButtonContainer = connect(
   })
 )(Button)
 
-export default HomeButtonContainer
+export default HomeButton

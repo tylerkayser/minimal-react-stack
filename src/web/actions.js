@@ -1,4 +1,4 @@
-import home from './home/home-actions'
+import home from './home/home.actions'
 
 const actions = {
   home

@@ -1,7 +1,7 @@
-import Navigation from './Navigation'
+import Navigation from './navigation'
 import React from 'react'
 import Router from 'react-router/BrowserRouter'
-import Routes from '../Routes'
+import Routes from '../routes'
 import { Provider } from 'react-redux'
 
 const Root = ({ store }) => (

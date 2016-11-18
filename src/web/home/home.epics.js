@@ -1,5 +1,5 @@
 import { combineEpics } from 'redux-observable'
-import { PING, pong } from './home-actions'
+import { PING, pong } from './home.actions'
 
 import 'rxjs/add/operator/delay'
 import 'rxjs/add/operator/filter'

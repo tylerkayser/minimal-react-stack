@@ -1,4 +1,4 @@
-import { PING, PONG } from './home-actions'
+import { PING, PONG } from './home.actions'
 
 function homeReducers(state = {}, action) {
   console.log(state, action)

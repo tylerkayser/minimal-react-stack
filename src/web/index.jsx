@@ -1,6 +1,6 @@
 import configureStore from './store'
 import React from 'react'
-import Root from './common/Root'
+import Root from './common/root'
 import { AppContainer } from 'react-hot-loader'
 import { render } from 'react-dom'
 
@@ -15,8 +15,8 @@ render(
 )
 
 if (module.hot) {
-  module.hot.accept('./common/Root', () => {
-    const NextRoot = require('./common/Root').default
+  module.hot.accept('./common/root', () => {
+    const NextRoot = require('./common/root').default
     render(
       <AppContainer>
         <NextRoot store={store}/>

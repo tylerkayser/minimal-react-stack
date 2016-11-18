@@ -1,10 +1,10 @@
-import HomeButtonContainer from './HomeButtonContainer'
+import HomeButton from './home-button'
 import React from 'react'
 
 const Home = () => (
   <div>
     Home<br/>
-    <HomeButtonContainer/>
+    <HomeButton/>
   </div>
 )
 
