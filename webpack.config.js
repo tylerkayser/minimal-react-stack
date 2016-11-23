@@ -3,7 +3,7 @@ var webpack = require('webpack');
 
 module.exports = {
   devServer: {
-    contentBase: config.paths.distWeb,
+    contentBase: config.paths.dist,
     historyApiFallback: true,
     host: '127.0.0.1',
     hot: true,
@@ -14,7 +14,7 @@ module.exports = {
   devtool: 'eval',
   entry: [
     'react-hot-loader/patch',
-    config.paths.srcWeb + '/index.jsx'
+    config.paths.src + '/index.jsx'
   ],
   module: {
     loaders: [
@@ -32,7 +32,7 @@ module.exports = {
   },
   output: {
     filename: 'app.js',
-    path: config.paths.distWeb,
+    path: config.paths.dist,
     publicPath: '/'
   },
   plugins: [
