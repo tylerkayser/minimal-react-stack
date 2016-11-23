@@ -1,7 +1,7 @@
-var config = require('./config');
-var webpack = require('webpack');
+import config from './config'
+import webpack from 'webpack'
 
-module.exports = {
+export default {
   devServer: {
     contentBase: config.paths.dist,
     historyApiFallback: true,
@@ -14,7 +14,7 @@ module.exports = {
   devtool: 'eval',
   entry: [
     'react-hot-loader/patch',
-    config.paths.src + '/index.jsx'
+    `${config.paths.src}/index.jsx`
   ],
   module: {
     loaders: [
@@ -42,6 +42,6 @@ module.exports = {
     extensions: ['', '.js', '.jsx']
   },
   sassLoader: {
-    data: '$env: \'' + process.env.NODE_ENV + '\';'
+    data: `$env: '${process.env.NODE_ENV}';`
   }
-};
+}

@@ -4,8 +4,8 @@
   "description": "Minimal React Stack with Redux, React-Router v4, Redux-Observable, HMR, Babel, and Webpack",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.config.js --progress --profile --colors && cp src/index.html dist/index.html",
-    "start": "webpack-dev-server --progress --profile --colors"
+    "build": "babel-node ./node_modules/webpack/bin/webpack --config webpack.config.js --progress --profile --colors && cp src/index.html dist/index.html",
+    "start": "babel-node ./node_modules/webpack-dev-server/bin/webpack-dev-server --progress --profile --colors"
   },
   "author": "Tyler Kayser",
   "license": "MIT",

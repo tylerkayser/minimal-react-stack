@@ -1,8 +1,8 @@
-var resolve = require('path').resolve;
+import { resolve } from 'path'
 
-module.exports = {
+export default {
   paths: {
     dist: resolve(__dirname, './dist'),
     src: resolve(__dirname, './src')
   }
-};
+}
